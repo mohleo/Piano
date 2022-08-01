@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Piano</title>
+  </head>
+  <body>
+        <div class="container">
+            <div class="white-keys">
+              <kbd style="left: 0;">A</kbd>
+              <kbd style="left: 40px;">S</kbd>
+              <kbd style="left: 80px;">D</kbd>
+              <kbd style="left: 120px;">F</kbd>
+              <kbd style="left: 160px;">G</kbd>
+              <kbd style="left: 200px;">H</kbd>
+              <kbd style="left: 240px;">J</kbd>
+          </div>
+          <div class="black-keys">
+                <kbd style="left: 30px;">W</kbd>
+                <kbd style="left: 70px;">E</kbd>
+                <!-- <kbd style="left: 110px;visibility: hidden;">R</kbd> -->
+                <kbd style="left: 150px;">T</kbd>
+                <kbd style="left: 190px;">Y</kbd>
+                <kbd style="left: 230px;">U</kbd>
+            </div>
+          </div>
+    <script>
+          document.addEventListener("keydown", function (event) {
+        // console.log(`The '${event.key}' key is pressed.`);
+        let audio = document.createElement("AUDIO");
+        let src = `./keys/${event.key}.mp3`;
+        audio.src = src;
+        audio.play();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+  background: green;
+}
+
+.container{
+  position: absolute;
+  height: 160px;
+  width: 280px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid;
+}
+
+/* .main { */
+  /* width: 280px; */
+  /* height: 160px; */
+  /* margin: auto; */
+  /* background-color: red; */
+  /* position: relative; */
+  /* top: 50%; */
+  /* left : 50%; */
+  /* transform: translateY(-50%); */
+  /* transform: translate(-50%, -50%); */
+/* } */
+
+.black-keys {
+  color: white;
+  position: absolute;
+}
+
+.white-keys {
+  color: black;
+  position: absolute;
+  
+}
+
+.white-keys > kbd {
+  /* padding: 140px 20px 20px 20px; */
+  padding-top: 120px;
+  width: 40px;
+  background-color: white;
+  float: left;
+  height: 160px;
+  /* z-index: 1; */
+  position: absolute;
+  text-align: center;
+  border: 1px solid;
+}
+.white-keys > kbd:first-child {
+  
+  border-left: none;
+}
+
+.whit-keyse-keys > kbd > span{
+  /* z-index: 3; */
+  /* display: inline-block; */
+  /* margin-left: -5px; */
+  /* position: absolute; */
+}
+
+.black-keys > kbd > span{
+  /* z-index: 5; */
+  /* display: inline-block; */
+  /* margin-left: -3px; */
+  /* position: absolute; */
+}
+
+.black-keys > kbd {
+  /* padding: 80px 10px 20px 10px; */
+  padding-top: 80px;
+  height: 120px;
+  width: 20px;
+  background-color: black;
+  /* float: left; */
+  /* z-index: 2; */
+  border-left: white 1px solid;
+  position: absolute;
+  text-align: center;
+}
